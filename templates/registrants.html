@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Daftar Pendaftar Pelatihan</h2>
+<table>
+    <tr>
+        <th>Nama</th>
+        <th>No Whatsapp</th>
+        <th>Program Pelatihan</th>
+        <th>Edit</th>
+    </tr>
+    {% for registrant in registrants %}
+    <tr>
+        <td>{{ registrant.name }}</td>
+        <td>{{ registrant.whatsapp }}</td>
+        <td>{{ registrant.program }}</td>
+        <td>
+            <a href="{{ url_for('edit', id=registrant._id) }}">Edit</a>
+            <a href="{{ url_for('delete', id=registrant._id) }}">Hapus</a>
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}

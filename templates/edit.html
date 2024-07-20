@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block title %}Edit Pendaftar{% endblock %}
+
+{% block content %}
+    <div class="form-register">
+        <h2>Edit Data Pendaftar</h2>
+        <form action="{{ url_for('edit', id=registrant._id) }}" method="POST">
+            <div class="form-group">
+                <label for="name">Nama Lengkap:</label>
+                <input type="text" id="name" name="name" value="{{ registrant.name }}" required>
+            </div>
+
+            <div class="form-group">
+                <label for="nik">NIK:</label>
+                <input type="text" id="nik" name="nik" value="{{ registrant.nik }}" required>
+            </div>
+
+            <div class="form-group">
+                <label for="whatsapp">Nomor Whatsapp:</label>
+                <input type="text" id="whatsapp" name="whatsapp" value="{{ registrant.whatsapp }}" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" value="{{ registrant.email }}" required>
+            </div>
+
+            <div class="form-group">
+                <label for="program">Program Pelatihan:</label>
+                <select id="program" name="program" required>
+                    {% for program in programs %}
+                    <option value="{{ program }}" {% if registrant.program == program %}selected{% endif %}>{{ program }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <button type="submit">Simpan</button>
+        </form>
+    </div>
+{% endblock %}

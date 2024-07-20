@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Pendaftaran Pelatihan</h2>
+<form action="{{ url_for('register') }}" method="post" class="form-register">
+    <div class="form-group">
+        <label for="name">Nama Lengkap</label>
+        <input type="text" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+        <label for="nik">NIK</label>
+        <input type="text" id="nik" name="nik" required>
+    </div>
+    <div class="form-group">
+        <label for="whatsapp">Nomor Whatsapp</label>
+        <input type="text" id="whatsapp" name="whatsapp" required>
+    </div>
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+        <label for="program">Program Pelatihan</label>
+        <select id="program" name="program" required>
+            {% for program in programs %}
+            <option value="{{ program }}">{{ program }}</option>
+            {% endfor %}
+        </select>
+    </div>
+    <button type="submit" class="button">Kirim</button>
+</form>
+{% endblock %}

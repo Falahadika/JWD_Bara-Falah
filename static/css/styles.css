@@ -1,0 +1,215 @@
+body {
+    font-family: 'poppins';
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e3a8a; /* Biru tua */
+    padding: 1em;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff; /* Putih */
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    background-color: #1e3a8a; /* Biru tua */
+    color: #fff;
+    padding: 2em;
+    text-align: center;
+}
+
+.content {
+    padding: 2em;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.header-left{
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+h1, h2 {
+    color: #1e3a8a; /* Biru tua */
+}
+
+.programs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1em;
+    margin: 1em;
+    width: 280px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 1em;
+}
+
+.card h3 {
+    color: #1e3a8a; /* Biru tua */
+    font-size: 1.2em;
+}
+
+.card p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.5em 1em;
+    margin-top: 1em;
+    background-color: #1e3a8a; /* Biru tua */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #142a60; /* Biru lebih tua */
+}
+
+.form-register {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2em;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+.form-group {
+    margin-bottom: 1em;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    display: block;
+}
+
+.form-group input, .form-group select {
+    padding: 0.5em;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-register button {
+    padding: 0.5em 1em;
+    background-color: #1e3a8a; /* Biru tua */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    align-self: flex-end;
+}
+
+.form-register button:hover {
+    background-color: #142a60; /* Biru lebih tua */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2em;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 1em;
+    text-align: left;
+}
+
+th {
+    background-color: #1e3a8a; /* Biru tua */
+    color: #fff;
+}
+
+td a {
+    color: #1e3a8a; /* Biru tua */
+    text-decoration: none;
+}
+
+td a:hover {
+    text-decoration: underline;
+}
+
+.action-button {
+    display: inline-block;
+    padding: 0.5em 1em;
+    background-color: #1e3a8a;
+    color: #fff;
+    border-radius: 4px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 0.5em;
+}
+
+.action-button.delete {
+    background-color: #e74c3c; /* Merah */
+}
+
+.action-button:hover {
+    background-color: #142a60;
+}
+
+.action-button.delete:hover {
+    background-color: #c0392b; /* Merah lebih tua */
+}
+
+.footer {
+    background-color: #1e3a8a; /* Biru tua */
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+    margin-top: 2em;
+}
